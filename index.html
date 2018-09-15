@@ -7,6 +7,7 @@
       <link rel="stylesheet" href="assets/bootstrap.min.css">
       <link rel="stylesheet" href="assets/font-awesome.min.css">
       <link rel="stylesheet" href="assets/custom.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
       <script type="text/javascript" src="assets/bootstrap.min.js.download"></script>
       <script language="JavaScript" type="text/javascript" src="assets/custom.js.download"></script>
 
@@ -61,7 +62,7 @@
         <section class="hero">  
           <div class="container">
             <div class="row justify-content-center text-center">
-              <div class="col-md-10 col-lg-6">
+              <div class="col-md-10 col-lg-6  animated bounceInDown" id="animate1">
                   <h1 class="display-5" style="font-family: profontwindows; word-spacing: -8px; color: red;">Codezoned</h1>
 
                 <p class="lead">ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -70,18 +71,16 @@
                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
               </div>
             </div>
-          </div>
-       
+          </div>     
       </section>
 
       <section id="sec-about" class="sec-about pt-5 pb-5">
         <div class="jumbotron jumbotron-fluid mb-0">
           <div class="container">
             <div class="row justify-content-center text-center">
-              <div class="col-md-10 col-lg-8">
+              <div class="col-md-10 col-lg-8 animated bounceInLeft" id="animate2">
                 <h1 class="display-5" style="font-family: profontwindows; word-spacing: -8px;">Welcome to<span class="display-5" style="font-family: profontwindows; word-spacing: -8px; color: red;"> Codezoned;</span></h1>
                 <p class="mt-4 mb-4" style="color: white;">We are an organization that strives towards building a community of enthusiastic and passionate individuals who want to share their love for creativity and imagination by building open source projects that have a positive impact on the society, making the world a better place.<br><br>
                   We are completely opensource. We make our own stuff and help everyone make theirs. Your contributions are welcome!
@@ -95,7 +94,7 @@
       <section class="hero">        
           <div class="container">
             <div class="row justify-content-center text-center">
-              <div class="col-md-10 col-lg-6">
+              <div class="col-md-10 col-lg-6 animated bounceInRight" id="animate3">
                 <p class="lead">ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -114,7 +113,7 @@
           <div class="jumbotron jumbotron-fluid mb-0">
             <div class="container">
               <div class="row justify-content-center text-center">
-                <div class="col-md-10 col-lg-6">
+                <div class="col-md-10 col-lg-6 animated bounceInUp" id="animate4">
                   <h1 class="display-5" style="font-family: profontwindows; word-spacing: -8px; color: red;">Codezoned</h1>
 
                   <p class="lead">ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -147,4 +146,139 @@
           <a href="mailto:team@opengenus.org" target="_blank"><span class="fa fa-envelope-o"></span></a>
         </li>
       </ul>
-  </footer></body></html>
+  </footer>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script>
+      
+          $(window).scroll(function(event) {
+  
+            $("#animate1").each(function(i, el) {
+              var el = $(el);
+              if (el.visible(true)) {
+                el.addClass("animated bounceInDown"); 
+              } 
+            });
+
+            var animationEnd = (function(el) {
+            var animations = {
+              animation: 'animationend',
+              OAnimation: 'oAnimationEnd',
+              MozAnimation: 'mozAnimationEnd',
+              WebkitAnimation: 'webkitAnimationEnd',
+            };
+
+            for (var t in animations) {
+              if (el.style[t] !== undefined) {
+                return animations[t];
+              }
+            }
+          })(document.createElement('div'));
+
+          $('#yourElement').one(animationEnd, function(){
+
+              $("#animate1").removeClass('animated bounceInDown')
+          });
+
+        });
+
+          $(window).scroll(function(event) {
+  
+            $("#animate2").each(function(i, el) {
+              var el = $(el);
+              if (el.visible(true)) {
+                el.addClass("animated bounceInLef"); 
+              } 
+            });
+
+            var animationEnd = (function(el) {
+            var animations = {
+              animation: 'animationend',
+              OAnimation: 'oAnimationEnd',
+              MozAnimation: 'mozAnimationEnd',
+              WebkitAnimation: 'webkitAnimationEnd',
+            };
+
+            for (var t in animations) {
+              if (el.style[t] !== undefined) {
+                return animations[t];
+              }
+            }
+          })(document.createElement('div'));
+
+          $('#yourElement').one(animationEnd, function(){
+
+              $("#animate1").removeClass('animated bounceInLef')
+          });
+
+        });
+
+
+          $(window).scroll(function(event) {
+  
+            $("#animate3").each(function(i, el) {
+              var el = $(el);
+              if (el.visible(true)) {
+                el.addClass("animated bounceInRight"); 
+              } 
+            });
+
+            var animationEnd = (function(el) {
+            var animations = {
+              animation: 'animationend',
+              OAnimation: 'oAnimationEnd',
+              MozAnimation: 'mozAnimationEnd',
+              WebkitAnimation: 'webkitAnimationEnd',
+            };
+
+            for (var t in animations) {
+              if (el.style[t] !== undefined) {
+                return animations[t];
+              }
+            }
+          })(document.createElement('div'));
+
+          $('#yourElement').one(animationEnd, function(){
+
+              $("#animate1").removeClass('animated bounceInRight')
+          });
+
+        });
+
+
+          $(window).scroll(function(event) {
+  
+            $("#animate4").each(function(i, el) {
+              var el = $(el);
+              if (el.visible(true)) {
+                el.addClass("animated bounceInUp"); 
+              } 
+            });
+
+            var animationEnd = (function(el) {
+            var animations = {
+              animation: 'animationend',
+              OAnimation: 'oAnimationEnd',
+              MozAnimation: 'mozAnimationEnd',
+              WebkitAnimation: 'webkitAnimationEnd',
+            };
+
+            for (var t in animations) {
+              if (el.style[t] !== undefined) {
+                return animations[t];
+              }
+            }
+          })(document.createElement('div'));
+
+          $('#yourElement').one(animationEnd, function(){
+
+              $("#animate1").removeClass('animated bounceInUp')
+          });
+
+        });
+    
+  </script>
+
+</body>
+</html>
