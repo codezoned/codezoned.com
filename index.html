@@ -1,88 +1,461 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<!-- saved from url=(0025)http://www.opengenus.org/ -->
+<html class="gr__opengenus_org">
 <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>Codezoned</title>
-      <link rel="stylesheet" href="assets/css/style1.css">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
+      <link rel="stylesheet" href="assets/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/font-awesome.min.css">
+      <link rel="stylesheet" href="assets/custom.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+      <script type="text/javascript" src="assets/bootstrap.min.js.download"></script>
+      <script language="JavaScript" type="text/javascript" src="assets/custom.js.download"></script>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
+      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="icon" type="image/ico" href="assets/img/cz_signature.png" />
       <style>
-      		a:hover{
-				background-color: white;
-				color: black;
-			}
+        @font-face{
+          font-family: profontwindows;
+          src: url('assets/fonts/ProFontWindows/ProFontWindows.ttf');
+        }
+
+        ul li a{
+          color: white;
+        }
+        ul li a:hover {
+          color: red;
+        }
+
+        a span{
+          background-color: transparent;
+          margin: 5px 2%; 
+          padding: 5px 2%; 
+          font-size: 20px; 
+          /*box-shadow: 2px 2px 2px #353535; */
+          color: white;
+        }
+
+        button{
+          background-color: transparent;
+          border: none;
+        }
+
+        a span:hover{
+          border-bottom-style: none;
+          list-style: none;
+          color: red;
+        } 
+        div a{
+          color: #222222;
+        }
+        div a:hover {
+          color: red;
+          text-decoration:  none;
+        } 
+        .button-container {
+            display: flex;
+
+            margin: 5px auto;
+
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .button {
+            display: flex;
+            overflow: hidden;
+
+            margin: 4px 10px;
+            padding: 12px 12px;
+
+            cursor: pointer;
+            user-select: none;
+            transition: all 150ms linear;
+            text-align: center;
+            white-space: nowrap;
+            text-decoration: none !important;
+            text-transform: none;
+            text-transform: capitalize;
+
+            color: #fff;
+            border: 0 none;
+            border-radius: 4px;
+
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 1.3;
+
+            -webkit-appearance: none;
+            -moz-appearance:    none;
+            appearance:         none;
+           
+            justify-content: center;
+            align-items: center;
+            flex: 0 0 160px;
+            
+            box-shadow: 2px 5px 10px var(--color-smoke);
+
+            
+          }
+          .button:hover {
+              transition: all 150ms linear;
+
+              opacity: .85;
+            }
+            
+            .button:active {
+              transition: all 150ms linear;
+              opacity: .75;
+            }
+            
+            .button:focus {
+              outline: 1px dotted #959595;
+              outline-offset: -4px;
+            }
+
+          .button.-regular {
+            color: #202129;
+            background-color: #f2f2f2;
+       
+          }
+          .button.-regular:hover {
+              color: red;
+              background-color: #e1e2e2;
+              opacity: 1;
+            }
+            
+            .button.-regular:active {
+              background-color: #d5d6d6;
+              opacity: 1;
+            }
+           
+            .box-centerside {
+              background: url("") repeat-x scroll center top transparent;
+              float: left;
+              height: 250px;
+              width: 250px;
+              border-radius: 20px;
+              padding: 5px;
+              /*background-color: red;*/
+              margin: 3.5%;
+              /*box-shadow: 4px 4px 4px gray;*/
+            }
+
+            .button-container div a:hover{
+              color: red;
+
+            }
+
       </style>
+
+      <title>Codezoned</title>
 </head>
-<body>
-      <div class="wrapper">
-            <header>
 
+<body data-gr-c-s-loaded="true">
+  <header>
+        <nav class="navbar navbar-toggleable-sm navbar-fixed-top" style="background-color: black;">
+          <a href="http://www.codezoned.com" class="navbar-brand mb-0" style="font-family: profontwindows; font-size: 30px;"><img src="assets/img/CZmainsmall.png" style="width: 12%; min-width: 150px;"></a>
 
-                <nav style="background-color: black; height: 60px;">
-	                <div class="menu-icon">
-	                        <i class="fa fa-bars fa-2x"></i>
-	                </div>
+          <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#headerNav" aria-controls="headerNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-                    <div class="logo" style="">
-                         <img src="assets/img/CZTrans.png" style="width: 15%; min-width: 185px; margin-top: -1%;">
-                    </div>
+          <div id="headerNav" class="navbar-collapse justify-content-end collapse" aria-expanded="false" style="">
+            <ul class="navbar-nav">
+              
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/codezoned/join_codezoned" target="_blank">Join</a>
+              </li>
 
-                    <div class="menu">
-                        <ul>
-                            <li><a href="#" class="hover-class">About Us</a></li>
-                            <li><a href="https://github.com/codezoned/UHack" class="hover-class">UHack 2018</a></li>
-                            <li><a href="https://github.com/codezoned/rig" class="hover-class">RIG</a></li>
-                            <li><a href="https://github.com/codezoned/ScriptsDump" class="hover-class">Scripts Dump</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/codezoned/rig" target="_blank">RIG</a>
+              </li>
 
-                        </ul>
-                    </div>
-
-                </nav>
-
-            </header>
-
-
-
-            <div class="content">
-
-
-                  <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                  </p>
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/codezoned/ScriptsDump" target="_blank">ScriptsDump</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/codezoned/BlogCast" target="_blank">Blog Cast</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://talk.codezoned.com/" target="_blank" style="color:red;">Forum</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </header>
+   <br>
+        <section class="hero">  
+          <div class="jumbotron jumbotron-fluid mb-0">
+          <div class="container">
+            <div class="row justify-content-center text-center">
+              <div class="col-md-10 col-lg-6  animated bounceInDown" id="animate1" style="vertical-align: middle; text-align: center;">
+                <h1 class="display-5" style="font-family: profontwindows; word-spacing: -8px; font-size: 3em;">Welcome to<span class="display-5" style="font-family: profontwindows; word-spacing: -8px; color: red;">&nbsp;<span style="color: white;">codezoned</span><span style="color: #767777;">;</span></span></h1>
+                <p class="lead" style="font-size: 18.5px; color: #d1d1d1;">We are an Opensource non-profit-organization which is targeting on educating and spreading our core belief of 'learning by doing'.</p>
+                 <div class="button-container">
+                     <div class='button -regular center'><a href="https://github.com/codezoned/"> GitHub</a></div>
+                     <div class='button -regular center'><a href="http://talk.codezoned.com"> Forum</a></div>
+                     <div class='button -regular center'><a href="https://discordapp.com/invite/aMZY22">Discord</a></div>
+                 </div>
+              </div>
             </div>
-            <div class="footer">
-				<p>Welcome To Codezoned;</p>
-			</div>
-      </div>
+          </div>  
+          </div>   
+      </section>
 
-      <script type="text/javascript">
+      <section id="sec-about" class="sec-about pt-5 pb-5">
+          <div class="container">
+            <div class="row justify-content-center text-center">
+              <div class="col-md-10 col-lg-8 animated bounceInLeft" id="animate2">                
+                <p class="mt-4 mb-4" style="">
+                
+                  Codezoned is an opensource NPO which is targeting on educating and spreading it's core belief by making college and school students to contribute to opensource. We develop FOSS for NGOs, Conduct Hackathons across colleges and organisations and give digital literacy education to less privileged children.
+                  <br><br>
+                  We are an organization that strives towards building a community of enthusiastic and passionate individuals who want to share their love for creativity and imagination by building open source projects that have a positive impact on the society, making the world a better place.<br><br>
+                  We are completely opensource. We make our own stuff and help everyone make theirs. Your contributions are welcome!
+                </p>
+              </div>
+            </div>
+          </div>           
+      </section>
 
+      <!-- <section class="hero">        
+          <div class="container">
+            <div class="row justify-content-center text-center">
+              <div class="col-md-10 col-lg-6 animated bounceInRight" id="animate3">
+                <p class="lead">ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+              </div>
+            </div>
+          </div>
+       
+      </section> -->
+
+        <section class="hero">
+        
+          <div class="jumbotron jumbotron-fluid mb-0">
+            <div class="container">
+              <div class="row justify-content-center text-center">
+                <div class="col-md-10 col-lg-6 animated bounceInUp" id="animate4" style="border-bottom: 3px solid white; text-align: center;">
+                  <h1 class="display-5" style="font-family: profontwindows; word-spacing: -8px; margin-top: -5%;">Hackathons</h1>
+
+                  <h3 class="lead">These are some of the events we are honoured to have organised/be a part of.</h3><br>
+                  
+                  
+                  <a href="http://uhack.in"><img src="assets/img/uhack_sticker.png" style="width: 30%;min-width: 90px; opacity: 7;"></a><br>
+                  <span style="color: white;">UHack 2018</span><br><br>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+
+       <section id="sec-about" class="sec-about pt-5 pb-5">
+                <!-- <div class="container"> -->
+                  <div class="row justify-content-center text-center" style="">
+                    <div class="col-md-4 col-lg-8 animated bounceInLeft" id="animate2">                
+                    
+                      <div class="box-centerside" style="border: 1px solid #D7D7D7;">
+                        <h1>BlogCast</h1><br>
+                        <p>BlogCast is a 100% Opensource blogging App/Platform.</p><br>
+                        <div class="button-container">
+                           <div class='button -regular center hovercls' style="background-color: #2196F3;"><a style=" color: white;" href="https://github.com/codezoned/blogcast">Find out More</a></div>
+                     
+                        </div>
+                      </div>
+                      <div class="box-centerside" style="border: 1px solid #D7D7D7;">
+                        <h1>RIG </h1><br>
+                        <p>RIG is an app to generate IDs and badges for any event or meetup!</p><br>
+                        <div class="button-container">
+                           <div class='button -regular center hovercls' style="background-color: #2196F3;"><a style=" color: white;" href="https://github.com/codezoned/rig">Find out More</a></div>
+                        </div>
+                      </div>
+
+                      <div class="box-centerside" style="border: 1px solid #D7D7D7;">
+                        <h1>ScriptsDump</h1><br>
+                        <p style="padding: 4px;">ScriptsDump is a complete repository of all kind of scripts we and you can think of.</p>
+                        <div class="button-container">
+                          <div class='button -regular center hovercls' style="background-color: #2196F3;"><a style=" color: white;" href="https://github.com/codezoned/ScriptsDump">Find out More</a> </div>
+                        </div>
+                      </div>
+                        
+                    </div>     
+                  </div>
+                  <div style="width: 100%; text-align: center;">
+                        <h5 style="color: darkgray;">And many more...</h5>                 
+
+                  </div><br><br>
+
+                  <div style="width: 100%; text-align: center;">
+                    <span style="font-size: 22px;">Wanna Partner with us? Sponsor us? Or talk to us?</span><br>
+                        <span style="font-size: 22px;"><b>Contact us at team@codezoned.com<b></span>                 
+
+                  </div>
+                           
+      </section>
+      <br><br>
+   <footer class="footer fixed-bottom">
+      <ul class="list-inline mb-0 text-center">
+
+        <li class="list-inline-item">
+          <a href="" target="_blank"><span class="fa fa-facebook"></span></a>
+        </li>
+        
+        <li class="list-inline-item">
+          <a href="" target="_blank"><span class="fa fa-github-square"></span></a>
+        </li>
       
-      // Menu-toggle button
+        <li class="list-inline-item">
+          <a href="" target="_blank"><span class="fa fa-linkedin"></span></a>
+        </li>
+        
+        <li class="list-inline-item">
+          <a href="" target="_blank"><span class="fa fa-instagram"></span></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="" target="_blank"><span class="fa fa-discord"></span></a>
+        </li>
+      </ul>
+  </footer>
 
-      $(document).ready(function() {
-            $(".menu-icon").on("click", function() {
-                  $("nav ul").toggleClass("showing");
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script>
+      
+          $(window).scroll(function(event) {
+  
+            $("#animate1").each(function(i, el) {
+              var el = $(el);
+              if (el.visible(true)) {
+                el.addClass("animated bounceInDown"); 
+              } 
             });
-      });
 
-      // Scrolling Effect
+            var animationEnd = (function(el) {
+            var animations = {
+              animation: 'animationend',
+              OAnimation: 'oAnimationEnd',
+              MozAnimation: 'mozAnimationEnd',
+              WebkitAnimation: 'webkitAnimationEnd',
+            };
 
-      // $(window).on("scroll", function() {
-      //       if($(window).scrollTop()) {
-      //             $('nav').addClass('black');
-      //       }
+            for (var t in animations) {
+              if (el.style[t] !== undefined) {
+                return animations[t];
+              }
+            }
+          })(document.createElement('div'));
 
-      //       else {
-      //             $('nav').removeClass('black');
-      //       }
-      // })
+          $('#yourElement').one(animationEnd, function(){
+
+              $("#animate1").removeClass('animated bounceInDown')
+          });
+
+        });
+
+          $(window).scroll(function(event) {
+  
+            $("#animate2").each(function(i, el) {
+              var el = $(el);
+              if (el.visible(true)) {
+                el.addClass("animated bounceInLef"); 
+              } 
+            });
+
+            var animationEnd = (function(el) {
+            var animations = {
+              animation: 'animationend',
+              OAnimation: 'oAnimationEnd',
+              MozAnimation: 'mozAnimationEnd',
+              WebkitAnimation: 'webkitAnimationEnd',
+            };
+
+            for (var t in animations) {
+              if (el.style[t] !== undefined) {
+                return animations[t];
+              }
+            }
+          })(document.createElement('div'));
+
+          $('#yourElement').one(animationEnd, function(){
+
+              $("#animate2").removeClass('animated bounceInLef')
+          });
+
+        });
 
 
-      </script>
+          $(window).scroll(function(event) {
+  
+            $("#animate3").each(function(i, el) {
+              var el = $(el);
+              if (el.visible(true)) {
+                el.addClass("animated bounceInRight"); 
+              } 
+            });
+
+            var animationEnd = (function(el) {
+            var animations = {
+              animation: 'animationend',
+              OAnimation: 'oAnimationEnd',
+              MozAnimation: 'mozAnimationEnd',
+              WebkitAnimation: 'webkitAnimationEnd',
+            };
+
+            for (var t in animations) {
+              if (el.style[t] !== undefined) {
+                return animations[t];
+              }
+            }
+          })(document.createElement('div'));
+
+          $('#yourElement').one(animationEnd, function(){
+
+              $("#animate3").removeClass('animated bounceInRight')
+          });
+
+        });
+
+
+          $(window).scroll(function(event) {
+  
+            $("#animate4").each(function(i, el) {
+              var el = $(el);
+              if (el.visible(true)) {
+                el.addClass("animated bounceInUp"); 
+              } 
+            });
+
+            var animationEnd = (function(el) {
+            var animations = {
+              animation: 'animationend',
+              OAnimation: 'oAnimationEnd',
+              MozAnimation: 'mozAnimationEnd',
+              WebkitAnimation: 'webkitAnimationEnd',
+            };
+
+            for (var t in animations) {
+              if (el.style[t] !== undefined) {
+                return animations[t];
+              }
+            }
+          })(document.createElement('div'));
+
+          $('#yourElement').one(animationEnd, function(){
+
+              $("#animate4").removeClass('animated bounceInUp')
+          });
+
+        });
+    
+  </script>
 
 </body>
 </html>
