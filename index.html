@@ -149,64 +149,136 @@
   </footer>
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  
+
   <script>
-      $(document).ready(function(){
+      
           $(window).scroll(function(event) {
   
             $("#animate1").each(function(i, el) {
               var el = $(el);
               if (el.visible(true)) {
-                el.addClass("bounceInDown"); 
+                el.addClass("animated bounceInDown"); 
               } 
             });
 
+            var animationEnd = (function(el) {
+            var animations = {
+              animation: 'animationend',
+              OAnimation: 'oAnimationEnd',
+              MozAnimation: 'mozAnimationEnd',
+              WebkitAnimation: 'webkitAnimationEnd',
+            };
+
+            for (var t in animations) {
+              if (el.style[t] !== undefined) {
+                return animations[t];
+              }
+            }
+          })(document.createElement('div'));
+
+          $('#yourElement').one(animationEnd, function(){
+
+              $("#animate1").removeClass('animated bounceInDown')
+          });
+
+        });
+
+          $(window).scroll(function(event) {
+  
             $("#animate2").each(function(i, el) {
               var el = $(el);
               if (el.visible(true)) {
-                el.addClass("bounceInLeft"); 
+                el.addClass("animated bounceInLef"); 
               } 
             });
-            
+
+            var animationEnd = (function(el) {
+            var animations = {
+              animation: 'animationend',
+              OAnimation: 'oAnimationEnd',
+              MozAnimation: 'mozAnimationEnd',
+              WebkitAnimation: 'webkitAnimationEnd',
+            };
+
+            for (var t in animations) {
+              if (el.style[t] !== undefined) {
+                return animations[t];
+              }
+            }
+          })(document.createElement('div'));
+
+          $('#yourElement').one(animationEnd, function(){
+
+              $("#animate1").removeClass('animated bounceInLef')
           });
 
-           $(window).scroll(function(event) {
+        });
+
+
+          $(window).scroll(function(event) {
   
-            $("#animate1").each(function(i, el) {
+            $("#animate3").each(function(i, el) {
               var el = $(el);
               if (el.visible(true)) {
-                el.addClass("bounceInRight"); 
+                el.addClass("animated bounceInRight"); 
               } 
             });
 
-            $("#animate1").each(function(i, el) {
-              var el = $(el);
-              if (el.visible(true)) {
-                el.addClass("bounceInUp"); 
-              } 
-            });
-            
+            var animationEnd = (function(el) {
+            var animations = {
+              animation: 'animationend',
+              OAnimation: 'oAnimationEnd',
+              MozAnimation: 'mozAnimationEnd',
+              WebkitAnimation: 'webkitAnimationEnd',
+            };
+
+            for (var t in animations) {
+              if (el.style[t] !== undefined) {
+                return animations[t];
+              }
+            }
+          })(document.createElement('div'));
+
+          $('#yourElement').one(animationEnd, function(){
+
+              $("#animate1").removeClass('animated bounceInRight')
           });
-      })
+
+        });
+
+
+          $(window).scroll(function(event) {
+  
+            $("#animate4").each(function(i, el) {
+              var el = $(el);
+              if (el.visible(true)) {
+                el.addClass("animated bounceInUp"); 
+              } 
+            });
+
+            var animationEnd = (function(el) {
+            var animations = {
+              animation: 'animationend',
+              OAnimation: 'oAnimationEnd',
+              MozAnimation: 'mozAnimationEnd',
+              WebkitAnimation: 'webkitAnimationEnd',
+            };
+
+            for (var t in animations) {
+              if (el.style[t] !== undefined) {
+                return animations[t];
+              }
+            }
+          })(document.createElement('div'));
+
+          $('#yourElement').one(animationEnd, function(){
+
+              $("#animate1").removeClass('animated bounceInUp')
+          });
+
+        });
+    
   </script>
-
-
 
 </body>
 </html>
-
-
-
-            $("#animate1").each(function(i, el) {
-              var el = $(el);
-              if (el.visible(true)) {
-                el.addClass("bounceInRight"); 
-              } 
-            });
-
-            $("#animate1").each(function(i, el) {
-              var el = $(el);
-              if (el.visible(true)) {
-                el.addClass("bounceInUp"); 
-              } 
-            });
