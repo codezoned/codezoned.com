@@ -8,12 +8,15 @@
       <link rel="stylesheet" href="assets/font-awesome.min.css">
       <link rel="stylesheet" href="assets/custom.css">
       <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
-      <script type="text/javascript" src="assets/bootstrap.min.js.download"></script>
+      <scriptsrc="assets/bootstrap.min.js.download"></script>
       <script language="JavaScript" type="text/javascript" src="assets/custom.js.download"></script>
 
       <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
       <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="icon" type="image/ico" href="assets/img/cz_signature.png" />
+      <link rel="stylesheet" type="text/css" href="assets/materialize.css">
+      <script type="text/javascript" src="assets/materialize.js"></script>
+
       <style>
         @font-face{
           font-family: profontwindows;
@@ -146,6 +149,10 @@
 
             }
 
+            #hoverbtn:hover{
+              background-color: red;
+            }
+
       </style>
 
       <title>Codezoned</title>
@@ -154,7 +161,7 @@
 <body data-gr-c-s-loaded="true">
   <header>
         <nav class="navbar navbar-toggleable-sm navbar-fixed-top" style="background-color: black;">
-          <a href="http://www.codezoned.com" class="navbar-brand mb-0" style="font-family: profontwindows; font-size: 30px;"><img src="assets/img/CZmainsmall.png" style="width: 12%; min-width: 150px;"></a>
+          <div><a href="http://www.codezoned.com" class="navbar-brand mb-0" style=""><img src="assets/img/CZmainsmall.png" style="width: 12%; min-width: 150px;"></a></div>
 
           <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#headerNav" aria-controls="headerNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -186,16 +193,16 @@
     </header>
    <br>
         <section class="hero">  
-          <div class="jumbotron jumbotron-fluid mb-0">
+          <div class="jumbotron jumbotron-fluid mb-0" style="text-align: center;">
           <div class="container">
             <div class="row justify-content-center text-center">
               <div class="col-md-10 col-lg-6  animated bounceInDown" id="animate1" style="vertical-align: middle; text-align: center;">
                 <h1 class="display-5" style="font-family: profontwindows; word-spacing: -8px; font-size: 3em;">Welcome to<span class="display-5" style="font-family: profontwindows; word-spacing: -8px; color: red;">&nbsp;<span style="color: white;">codezoned</span><span style="color: #767777;">;</span></span></h1>
                 <p class="lead" style="font-size: 18.5px; color: #d1d1d1;">We are an Opensource non-profit-organization which is targeting on educating and spreading our core belief of 'learning by doing'.</p>
                  <div class="button-container">
-                     <div class='button -regular center'><a href="https://github.com/codezoned/"> GitHub</a></div>
-                     <div class='button -regular center'><a href="http://talk.codezoned.com"> Forum</a></div>
-                     <div class='button -regular center'><a href="https://discordapp.com/invite/aMZY22">Discord</a></div>
+                     <a href="https://github.com/codezoned/"><div class='button -regular center' style="min-width: 100px;"> GitHub</div></a>
+                     <a href="http://talk.codezoned.com"><div class='button -regular center' style="min-width: 100px;">Forum</div></a>
+                     <a href="https://discordapp.com/invite/aMZY22"><div class='button -regular center' style="min-width: 100px;">Discord</div></a>
                  </div>
               </div>
             </div>
@@ -219,38 +226,42 @@
           </div>           
       </section>
 
-      <!-- <section class="hero">        
+      <section class="hero">        
           <div class="container">
             <div class="row justify-content-center text-center">
               <div class="col-md-10 col-lg-6 animated bounceInRight" id="animate3">
-                <p class="lead">ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                
+                  <h1 class="display-5" style="font-family: profontwindows; word-spacing: -8px;">Hackathons</h1>
+
+                  <h3 class="lead">These are some of the events we are honoured to have organised/be a part of.</h3><br>
+                  
+                  
+                  <a href="http://uhack.in"><img src="assets/img/uhack_sticker.png" style="width: 45%;min-width: 125px; opacity: 7;"></a><br>
+                  <span style="color: black; font-size: 22px;">UHack 2018</span><br><br>
+           
 
               </div>
             </div>
           </div>
        
-      </section> -->
+      </section>
 
         <section class="hero">
-        
-          <div class="jumbotron jumbotron-fluid mb-0">
-            <div class="container">
-              <div class="row justify-content-center text-center">
-                <div class="col-md-10 col-lg-6 animated bounceInUp" id="animate4" style="border-bottom: 3px solid white; text-align: center;">
-                  <h1 class="display-5" style="font-family: profontwindows; word-spacing: -8px; margin-top: -5%;">Hackathons</h1>
-
-                  <h3 class="lead">These are some of the events we are honoured to have organised/be a part of.</h3><br>
-                  
-                  
-                  <a href="http://uhack.in"><img src="assets/img/uhack_sticker.png" style="width: 30%;min-width: 90px; opacity: 7;"></a><br>
-                  <span style="color: white;">UHack 2018</span><br><br>
-                </div>
-              </div>
+          <div class="jumbotron jumbotron-fluid mb-0" style="vertical-align: middle;">
+            <div class="container row justify-content-center text-center" style="">
+              <!-- <div class="" style=""> -->
+                <!-- <div class="col-md-10 col-lg-6 animated bounceInUp" id="animate4" style=" text-align: center; "> -->
+                  <div style=" color: #d1d1d1; width: 100%; text-align: left;"><p style="margin-left: 8%; letter-spacing: 2.5px; ">Our Aamzing partner:</p></div>
+                  <div style="margin-top: -3%; width: 100%;" class="container">
+                    <a href="#"><img src="assets/img/spi_shadow.png" style="width: 75%; min-width: 320px;"></a>
+                  </div> 
+                  <ul class="list-inline mb-0 text-center" style="width: 100%; margin-top: -1.5%;">
+                    <li class="list-inline-item" style="margin: 2px 20px; font-size: 33px; color: white;"><span style="color: red;">Creative</span> Partner</li>
+                    <li class="list-inline-item" style="margin: 2px 20px; font-size: 33px; color: white;"><span style="color: red;">Outreach</span> Partner</li>
+                    <li class="list-inline-item" style="margin: 2px 20px; font-size: 33px; color: white;"><span style="color: red;">Evangelist</span> Partner</li>
+                  </ul>                             
+                <!-- </div> -->
+              <!-- </div> -->
             </div>
           </div>
       </section>
@@ -261,30 +272,47 @@
                   <div class="row justify-content-center text-center" style="">
                     <div class="col-md-4 col-lg-8 animated bounceInLeft" id="animate2">                
                     
-                      <div class="box-centerside" style="border: 1px solid #D7D7D7;">
-                        <h1>BlogCast</h1><br>
-                        <p>BlogCast is a 100% Opensource blogging App/Platform.</p><br>
-                        <div class="button-container">
-                           <div class='button -regular center hovercls' style="background-color: #2196F3;"><a style=" color: white;" href="https://github.com/codezoned/blogcast">Find out More</a></div>
-                     
+                      <div class="row">
+                        <div class="col s12 m12">
+                          <div class="card darken-1" style="background-color: white; min-height: 240px;">
+                            <div class="card-content white-text">
+                              <span class="card-title" style="color: black;"><strong>ScriptsDump</strong> </span>
+                              <p style="color: #9E9E9E">ScriptsDump is a complete repository of all kind of scripts we and you can think of.</p>
+                            </div>
+                            <div class="card-action">
+                              <a href="#"><div class='button -regular center' style="background-color: #2196F3; color: white;" id="hoverbtn">Check it out!</div></a>
+                              
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                      <div class="box-centerside" style="border: 1px solid #D7D7D7;">
-                        <h1>RIG </h1><br>
-                        <p>RIG is an app to generate IDs and badges for any event or meetup!</p><br>
-                        <div class="button-container">
-                           <div class='button -regular center hovercls' style="background-color: #2196F3;"><a style=" color: white;" href="https://github.com/codezoned/rig">Find out More</a></div>
-                        </div>
-                      </div>
 
-                      <div class="box-centerside" style="border: 1px solid #D7D7D7;">
-                        <h1>ScriptsDump</h1><br>
-                        <p style="padding: 4px;">ScriptsDump is a complete repository of all kind of scripts we and you can think of.</p>
-                        <div class="button-container">
-                          <div class='button -regular center hovercls' style="background-color: #2196F3;"><a style=" color: white;" href="https://github.com/codezoned/ScriptsDump">Find out More</a> </div>
+                        <div class="col s12 m12">
+                          <div class="card darken-1" style="background-color: white; min-height: 240px;">
+                            <div class="card-content white-text">
+                              <span class="card-title" style="color: black;"><strong>RIG</strong></span>
+                              <p style="color: #9E9E9E">RIG (Randomized ID Generator) is an app to generate IDs and badges for any event or meetup!</p>
+                            </div>
+                            <div class="card-action">
+                              <a href="#"><div class='button -regular center hoverbtn' style="background-color: #2196F3; color: white;">Check it out!</div></a>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      
+                        <div class="col s12 m12">
+                          <div class="card darken-1" style="background-color: white; min-height: 240px;">
+                            <div class="card-content white-text">
+                              <span class="card-title" style="color: black;"><strong>BlogCast</strong> </span>
+                              <p style="color: #9E9E9E"><strong>BlogCast is a 100% Opensource blogging App/Platform.</strong></p>
+                            </div>
+                            <div class="card-action">
+                              <a href="#"><div class='button -regular center hoverbtn' style="background-color: #2196F3; color: white;">Check it out!</div></a>
+                              
+                            </div>
+                          </div>
                         </div>
                       </div>
-                        
+                                            
                     </div>     
                   </div>
                   <div style="width: 100%; text-align: center;">
@@ -300,7 +328,7 @@
                            
       </section>
       <br><br>
-   <footer class="footer fixed-bottom">
+   <!-- <footer class="footer fixed-bottom">
       <ul class="list-inline mb-0 text-center">
 
         <li class="list-inline-item">
@@ -322,7 +350,30 @@
           <a href="" target="_blank"><span class="fa fa-discord"></span></a>
         </li>
       </ul>
-  </footer>
+  </footer> -->
+  <div style="width: 100%; position: fixed; background-color: black; height: 55px;" class="footer">
+      <ul class="list-inline mb-0 text-center" style="padding-top: -10px;">
+
+        <li class="list-inline-item" style="margin: 0 12px;">
+          <a href="https://www.facebook.com/codezoned/" target="_blank"><span class="fa fa-facebook"></span></a>
+        </li>
+        
+        <li class="list-inline-item" style="margin: 0 12px;">
+          <a href="https://github.com/codezoned" target="_blank"><span class="fa fa-github-square"></span></a>
+        </li>
+      
+        <li class="list-inline-item" style="margin: 0 12px;">
+          <a href="https://www.linkedin.com/company/codezoned/" target="_blank"><span class="fa fa-linkedin"></span></a>
+        </li>
+        
+        <li class="list-inline-item" style="margin: 0 12px;">
+          <a href="https://www.instagram.com/codezoned/" target="_blank"><span class="fa fa-instagram"></span></a>
+        </li>
+        <li class="list-inline-item" style="margin: 0 12px;">
+          <a href="" target="_blank"><span class="fa fa-discord"></span></a>
+        </li>
+      </ul>
+  </div>
 
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
