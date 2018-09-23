@@ -94,8 +94,8 @@ header {
 /* Footer */
 .footer {
   position: fixed;
-  height: 50px;
-  bottom: 0;
+  height: 55px;
+  bottom: 2px;
   width: 100%;
   background: #212121;
   padding-top: 20px;
@@ -109,6 +109,7 @@ header {
 .footer a {
   font-size: 18px;
   color: rgba(255, 255, 255, 0.5);
+  padding-bottom: 5px;
 }
 .footer a:focus, .footer a:hover {
   color: rgba(255, 255, 255, 0.25);
