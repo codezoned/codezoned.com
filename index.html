@@ -145,6 +145,22 @@
               opacity: 1;
             }
 
+            .button.-regular2 {
+            color: #4F4F4F;
+            background-color: #E2DBD6;
+
+          }
+          .button.-regular2:hover {
+              color: black;
+              background-color: #EFEFEF;
+              opacity: 1;
+            }
+
+            .button.-regular2:active {
+              background-color: #D9D9D9;
+              opacity: 1;
+            }
+
             .box-centerside {
               background: url("") repeat-x scroll center top transparent;
               float: left;
@@ -174,7 +190,48 @@
               width: 1000px;
               margin: auto auto;
             }
+            /*slider end*/
+            .company-logo{
+              -webkit-transition: opacity 2s;
+              
 
+            }
+            .company-logo:hover{
+              opacity: 0.5;
+              -moz-transform: opacity 2s;
+              -moz-transform: scale(1.15);
+              -webkit-transform: scale(1.15);
+              -o-transform: scale(1.15);
+              -ms-transform: scale(1.15);
+              -webkit-transform: scale(1.15);
+              transform: scale(1.15);
+
+              -webkit-transition: transform 1.15s ease-in-out;
+              -moz-transition:transform 1.15s ease-in-out;
+              -ms-transition:transform 1.15s ease-in-out;
+            }
+
+             .events-img{
+              -webkit-transition: opacity 2s;
+              width: 25%;
+              opacity: 1;
+
+             }
+
+             .events-img:hover{
+              opacity: 0.9;
+              -moz-transform: opacity 2s;
+              -moz-transform: scale(1.05);
+              -webkit-transform: scale(1.05);
+              -o-transform: scale(1.05);
+              -ms-transform: scale(1.05);
+              -webkit-transform: scale(1.05);
+              transform: scale(1.05);
+
+              -webkit-transition: transform 1.05s ease-in-out;
+              -moz-transition:transform 1.05s ease-in-out;
+              -ms-transition:transform 1.05s ease-in-out;
+            }
       </style>
 
       <title>Codezoned</title>
@@ -226,6 +283,10 @@
               <div class="col-md-10 col-lg-6  animated bounceInDown" id="animate1" style="vertical-align: middle; text-align: center;">
                 <h1 class="display-5" style="font-family: profontwindows; word-spacing: -8px; font-size: 3em;">Welcome to<span class="display-5" style="font-family: profontwindows; word-spacing: -8px; color: red;">&nbsp;<span style="color: white;">codezoned</span><span style="color: #767777;">;</span></span></h1>
                 <p class="lead" style="font-size: 18.5px; color: #d1d1d1;">We are an Opensource non-profit-organization which is targeting on educating and spreading our core belief of 'learning by doing'.</p>
+                 <div class="button-container">
+                     <a href="#"><div class='button -regular center' style="min-width: 340px;"> Join Us</div></a>
+                     
+                 </div>
                  <div class="button-container">
                      <a href="https://github.com/codezoned/"><div class='button -regular center' style="min-width: 100px;"> GitHub</div></a>
                      <a href="http://talk.codezoned.com"><div class='button -regular center' style="min-width: 100px;">Forum</div></a>
@@ -311,8 +372,8 @@
                 <h3 class="lead">These are some of the events we are honoured to have organised/be a part of.</h3><br>
               </div>
                 <div style="width: 80%; margin: auto auto;">
-                    <a href="#" ><img src="assets/img/uhack_sticker.png" style="width:25%; min-width: 125px; opacity: 7;"></a>
-                    <a href="#" style=""><img src="assets/img/Alertathon-logo.png" style="width:25%; min-width: 125px; opacity: 7; "></a><br>
+                    <a href="http://uhack.in/"><img src="assets/img/uhack_sticker.png" class="events-img" style=" min-width: 125px;"></a>
+                    <a href="http://alert.ngo/alertathon/" style=""><img src="assets/img/Alertathon-logo.png" class="events-img" style=" min-width: 125px;"></a><br>
                     <!-- <span style="font-size: 1em; color: #222222; margin-right: 17.5%;">Uhack 18</span>
                     <span style="font-size: 1em; color: #222222;">Alertathon 18</span> -->
                 </div>  
@@ -327,9 +388,9 @@
                 <div style=" color: #d1d1d1; width: 100%;"><p style="margin-left: 8%; letter-spacing: 2.5px; font-family: quicksand;">Our Amazing partners:</p></div><br><br>
                   <div style=""><br>
                     
-                        <a href="#"><img class="" src="assets/img/spi_shadow.png" style="width: 82.5%; min-width: 320px;"></a>
-                        <a href="#"><img class="" src="assets/img/Ankor-White.png" style="width: 47.50%; min-width: 320px; margin-right: 5%; padding-right: 5%; "></a>
-                        <a href="#"><img class="" src="assets/img/Alert-logo.png" style="width: 25%; min-width: 220px; margin-left: 5%; padding-left: 5%; "></a>
+                        <a href="https://www.spicinemas.in/"><img class="company-logo" src="assets/img/spi_shadow.png" style="width: 80%; min-width: 320px;"></a>
+                        <a href="https://ankor.us/"><img class="company-logo" src="assets/img/Ankor-White.png" style="width: 42.50%; min-width: 320px; margin-right: 5%; padding-right: 5%; "></a>
+                        <a href="http://alert.ngo/"><img class="company-logo" src="assets/img/Alert-logo.png" style="width: 27.5%; min-width: 220px; margin-left: 5%; padding-left: 5%; "></a>
 
               
                   </div>
@@ -374,14 +435,14 @@
                 
                   <div class="row justify-content-center text-center" style="">
                     <div class="col-md-4 col-lg-8 animated bounceInLeft" id="animate2">
-                      <h3 class="display-5" style="font-family: quicksand; word-spacing: ;">Some of our Opensource projects:</h3>
+                      <h3 class="display-5" style="font-family: quicksand; word-spacing: ; color: #272727;">Some of our Opensource projects:</h3>
                       <br>
                       <div class="row">
                         <div class="col s12 m12">
                           <div class="card darken-1" style="background-color: white; min-height: 240px;">
                             <div class="card-content white-text">
                               <span class="card-title" style="color: black;"><strong>ScriptsDump</strong> </span>
-                              <p style="color: #9E9E9E">ScriptsDump is a complete repository of all kind of scripts we and you can think of.</p>
+                              <p style="color: #777777">ScriptsDump is a complete repository of all kind of scripts we and you can think of.</p>
                             </div>
                             <div class="card-action">
                               <a href="https://github.com/codezoned/ScriptsDump"><div class='button -regular center' style="background-color: #2196F3; color: white;" id="hoverbtn">Check it out!</div></a>
@@ -394,7 +455,7 @@
                           <div class="card darken-1" style="background-color: white; min-height: 240px;">
                             <div class="card-content white-text">
                               <span class="card-title" style="color: black;"><strong>RIG</strong></span>
-                              <p style="color: #9E9E9E">RIG (Randomized ID Generator) is an app to generate IDs and badges for any event or meetup!</p>
+                              <p style="color: #777777">RIG (Randomized ID Generator) is an app to generate IDs and badges for any event or meetup!</p>
                             </div>
                             <div class="card-action">
                               <a href="https://github.com/codezoned/rig"><div class='button -regular center hoverbtn' style="background-color: #2196F3; color: white;">Check it out!</div></a>
@@ -407,7 +468,7 @@
                           <div class="card darken-1" style="background-color: white; min-height: 240px;">
                             <div class="card-content white-text">
                               <span class="card-title" style="color: black;"><strong>BlogCast</strong> </span>
-                              <p style="color: #9E9E9E"><strong>BlogCast is a 100% Opensource blogging App/Platform.</strong></p>
+                              <p style="color: #777777">BlogCast is a 100% Opensource blogging App/Platform.</p>
                             </div>
                             <div class="card-action">
                               <a href="https://github.com/codezoned/BlogCast"><div class='button -regular center hoverbtn' style="background-color: #2196F3; color: white;">Check it out!</div></a>
@@ -465,171 +526,9 @@
       <script type="text/javascript" src="assets/slick.js"></script>
 
       <script>
-        var myIndex = 0;
-        carousel();
+        
 
-        function carousel() {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            for (i = 0; i < x.length; i++) {
-               x[i].style.display = "none";  
-            }
-            myIndex++;
-            if (myIndex > x.length) {myIndex = 1}    
-            x[myIndex-1].style.display = "block";  
-            setTimeout(carousel, 2000); // Change image every 2 seconds
-        }
-
-        var myIndex2 = 0;
-        carousel2();
-
-        function carousel2() {
-            var i;
-            var x = document.getElementsByClassName("mySlides2");
-            for (i = 0; i < x.length; i++) {
-               x[i].style.display = "none";  
-            }
-            myIndex2++;
-            if (myIndex2 > x.length) {myIndex2 = 1}    
-            x[myIndex2-1].style.display = "block";  
-            setTimeout(carousel2, 2000); // Change image every 2 seconds
-        }
-
-        // $(document).ready(function(){
-        //   $('.thing').slick({
-        //     dots: true,
-        //     arrows: false,
-        //     autoplay: true,
-        //     autoplaySpeed: 1500;
-        //   });
-
-        // });
-
-        //   $(window).scroll(function(event) {
-
-        //     $("#animate1").each(function(i, el) {
-        //       var el = $(el);
-        //       if (el.visible(true)) {
-        //         el.addClass("animated bounceInDown");
-        //       }
-        //     });
-
-        //     var animationEnd = (function(el) {
-        //     var animations = {
-        //       animation: 'animationend',
-        //       OAnimation: 'oAnimationEnd',
-        //       MozAnimation: 'mozAnimationEnd',
-        //       WebkitAnimation: 'webkitAnimationEnd',
-        //     };
-
-        //     for (var t in animations) {
-        //       if (el.style[t] !== undefined) {
-        //         return animations[t];
-        //       }
-        //     }
-        //   })(document.createElement('div'));
-
-        //   $('#yourElement').one(animationEnd, function(){
-
-        //       $("#animate1").removeClass('animated bounceInDown')
-        //   });
-
-        // });
-
-        //   $(window).scroll(function(event) {
-
-        //     $("#animate2").each(function(i, el) {
-        //       var el = $(el);
-        //       if (el.visible(true)) {
-        //         el.addClass("animated bounceInLef");
-        //       }
-        //     });
-
-        //     var animationEnd = (function(el) {
-        //     var animations = {
-        //       animation: 'animationend',
-        //       OAnimation: 'oAnimationEnd',
-        //       MozAnimation: 'mozAnimationEnd',
-        //       WebkitAnimation: 'webkitAnimationEnd',
-        //     };
-
-        //     for (var t in animations) {
-        //       if (el.style[t] !== undefined) {
-        //         return animations[t];
-        //       }
-        //     }
-        //   })(document.createElement('div'));
-
-        //   $('#yourElement').one(animationEnd, function(){
-
-        //       $("#animate2").removeClass('animated bounceInLef')
-        //   });
-
-        // });
-
-
-        //   $(window).scroll(function(event) {
-
-        //     $("#animate3").each(function(i, el) {
-        //       var el = $(el);
-        //       if (el.visible(true)) {
-        //         el.addClass("animated bounceInRight");
-        //       }
-        //     });
-
-        //     var animationEnd = (function(el) {
-        //     var animations = {
-        //       animation: 'animationend',
-        //       OAnimation: 'oAnimationEnd',
-        //       MozAnimation: 'mozAnimationEnd',
-        //       WebkitAnimation: 'webkitAnimationEnd',
-        //     };
-
-        //     for (var t in animations) {
-        //       if (el.style[t] !== undefined) {
-        //         return animations[t];
-        //       }
-        //     }
-        //   })(document.createElement('div'));
-
-        //   $('#yourElement').one(animationEnd, function(){
-
-        //       $("#animate3").removeClass('animated bounceInRight')
-        //   });
-
-        // });
-
-
-        //   $(window).scroll(function(event) {
-
-        //     $("#animate4").each(function(i, el) {
-        //       var el = $(el);
-        //       if (el.visible(true)) {
-        //         el.addClass("animated bounceInUp");
-        //       }
-        //     });
-
-        //     var animationEnd = (function(el) {
-        //     var animations = {
-        //       animation: 'animationend',
-        //       OAnimation: 'oAnimationEnd',
-        //       MozAnimation: 'mozAnimationEnd',
-        //       WebkitAnimation: 'webkitAnimationEnd',
-        //     };
-
-        //     for (var t in animations) {
-        //       if (el.style[t] !== undefined) {
-        //         return animations[t];
-        //       }
-        //     }
-        //   })(document.createElement('div'));
-
-        //   $('#yourElement').one(animationEnd, function(){
-
-        //       $("#animate4").removeClass('animated bounceInUp')
-        //   });
-
-        // });
+       
 
   </script>
 
