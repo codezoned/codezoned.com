@@ -1,0 +1,24 @@
+.banner {
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+    background-color: #c64236;
+}
+.banner-text {
+    line-height: normal;
+    font-family: profontwindows;
+    font-size: 1.7rem;
+    color: #ffffff;
+    margin-bottom: 0;
+    padding: 1% 0 1% 0;
+}
+.banner-text strong {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2rem;
+}
+.banner-text a {
+    color: #ffffff;
+}
+.banner-text a:hover {
+    color: #202020;
+}
