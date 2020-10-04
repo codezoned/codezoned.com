@@ -276,7 +276,7 @@ body {
 .button.-regular:hover {
     color: red;
     background-color: #e1e2e2;
-    -webkit-transition: all 0.8s ease-in !important;
+    -webkit-transition: all 0.3s ease-in !important;
     opacity: 1;
 }
 
@@ -292,7 +292,6 @@ body {
 .welcome-section {  
     margin: 0 auto;
     padding: 7.5% 0 2.5% 0;
-    /* height: 100vh; */
 }
 
 .welcome-inner{
@@ -356,17 +355,19 @@ body {
 }
 
 .spi {
-    max-width: 50%;
+    max-width: 35%;
 }
 
 .ankor{
-    max-width: 30%;
+    max-width: 20%;
     margin: 0 6%;
 }
 
 .alert{
-    max-width: 17.5%;
+    max-width: 15%;
 }
+
+
 
 /*=================================================== End Events ============================================================== */
 
