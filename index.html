@@ -11,26 +11,21 @@
 
       <title>Codezoned - Home</title>
 
+      
+
       <meta name="description" content="A community of amazing individuals focused on building open source solutions which have a direct social impact in today's society" />
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-      <link rel="stylesheet" href="assets/bootstrap.min.css">
-      <link rel="stylesheet" href="assets/font-awesome.min.css">
-      <link rel="stylesheet" href="assets/custom.css">
-      <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
-      <script language="JavaScript" type="text/javascript" src="assets/custom.js.download"></script>
-
       <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
+
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+      <link rel="stylesheet" href="assets/custom.css">
       <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="icon" type="image/ico" href="assets/img/cz_signature.png" />
-      <link rel="stylesheet" type="text/css" href="assets/materialize.css">
-      <script type="text/javascript" src="assets/materialize.js"></script>
 
-     <link rel="stylesheet" type="text/css" href="assets/slick.css">
-     <link rel="stylesheet" type="text/css" href="slick-theme.css">
      <link rel="stylesheet" type="text/css" href="./assets/css/banner.css">
      <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet"> 
-    <script type="text/coffeescript" src="./assets/js/banner.coffee"></script>
+
+
       <style>
         @font-face{
           font-family: profontwindows;
@@ -240,39 +235,35 @@
 
 <body data-gr-c-s-loaded="true">
   <header style="position: absolute;">
-        <nav class="navbar navbar-toggleable-sm navbar-fixed-top" style="background-color: black;">
+ 				<div class="navbar navbar-expand-md" style="background-color: black;">
+                    <a href="http://www.codezoned.com" class="mb-0" style=""><img src="./assets/img/czmainsmall1.png" style="width: 12%; min-width: 150px;" /></a>
 
-          <div><a href="http://www.codezoned.com" class="navbar-brand mb-0" style=""><img src="./assets/img/czmainsmall1.png" style="width: 12%; min-width: 150px;"></a></div>
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon" style="color: white; width: 80px; background-color: #343434; padding-top: 2px; margin-top: 5px;">Menu</span>
+                    </button>
 
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://github.com/codezoned/join_codezoned" target="_blank">JoinUs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://github.com/codezoned/rig" target="_blank">RIG</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://github.com/codezoned/ScriptsDump" target="_blank">ScriptsDump</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://github.com/codezoned/BlogCast" target="_blank">BlogCast</a>
+                            </li>
+                            <li class="nav-item">
+				                <a class="nav-link" href="http://talk.codezoned.com/" target="_blank" style="color:red;">Forum</a>
+				            </li>
+ 
+                        </ul>
+                    </div>
+                </div>
 
-            <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#headerNav" aria-controls="headerNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon" style="color: white; width: 80px; background-color: #343434; padding-top: 2px; margin-top: 5px;">Menu</span>
-            </button>
-
-
-          <div id="headerNav" class="navbar-collapse justify-content-end collapse" aria-expanded="false" style="">
-            <ul class="navbar-nav">
-
-              <li class="nav-item">
-                <a class="nav-link" href="https://github.com/codezoned/join_codezoned" target="_blank">JoinUs</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="https://github.com/codezoned/rig" target="_blank">RIG</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="https://github.com/codezoned/ScriptsDump" target="_blank">ScriptsDump</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://github.com/codezoned/BlogCast" target="_blank">BlogCast</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="http://talk.codezoned.com/" target="_blank" style="color:red;">Forum</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
 
         <div class="banner" onclick="window.location.href='https://hac.codezoned.com';" value="Hac">
           <p class="banner-text"><a href="https://hac.codezoned.com">Codezoned's latest hackathon - <img src="./assets/img/hac_logo.png"/> <strong> "HackAgainstCovid" </strong> (7th to 9th Aug 2020) is open for registrations 🎉 </a> </p>
@@ -443,41 +434,39 @@
                       <h3 class="display-5" style="font-family: quicksand; word-spacing: ; color: #272727;">Some of our Opensource projects:</h3>
                       <br>
                       <div class="row">
-                        <div class="col s12 m12">
+                        <div class="col-sm-6 col-md-4">
                           <div class="card darken-1" style="background-color: white; min-height: 240px;">
-                            <div class="card-content white-text">
+                            <div class="card-content white-text mt-4">
                               <span class="card-title" style="color: black;"><strong>ScriptsDump</strong> </span>
                               <p style="color: #777777">ScriptsDump is a complete repository of all kind of scripts we and you can think of.</p>
                             </div>
-                            <div class="card-action">
+                            <div class="card-action mt-4">
                               <a href="https://github.com/codezoned/ScriptsDump"><div class='button -regular center' style="background-color: #2196F3; color: white;" id="hoverbtn">Check it out!</div></a>
-
                             </div>
                           </div>
                         </div>
 
-                        <div class="col s12 m12">
+                        <div class="col-sm-6 col-md-4">
                           <div class="card darken-1" style="background-color: white; min-height: 240px;">
-                            <div class="card-content white-text">
+                            <div class="card-content white-text mt-4">
                               <span class="card-title" style="color: black;"><strong>RIG</strong></span>
                               <p style="color: #777777">RIG (Randomized ID Generator) is an app to generate IDs and badges for any event or meetup!</p>
                             </div>
-                            <div class="card-action">
+                            <div class="card-action mt-4">
                               <a href="https://github.com/codezoned/rig"><div class='button -regular center hoverbtn' style="background-color: #2196F3; color: white;">Check it out!</div></a>
 
                             </div>
                           </div>
                         </div>
 
-                        <div class="col s12 m12">
+                        <div class="col-sm-6 col-md-4">
                           <div class="card darken-1" style="background-color: white; min-height: 240px;">
-                            <div class="card-content white-text">
+                            <div class="card-content white-text mt-4">
                               <span class="card-title" style="color: black;"><strong>BlogCast</strong> </span>
                               <p style="color: #777777">BlogCast is a 100% Opensource blogging App/Platform.</p>
                             </div><br>
-                            <div class="card-action">
+                            <div class="card-action mt-4">
                               <a href="https://github.com/codezoned/BlogCast"><div class='button -regular center hoverbtn' style="background-color: #2196F3; color: white;">Check it out!</div></a>
-
                             </div>
                           </div>
                         </div>
@@ -525,17 +514,9 @@
 
 
 
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-      <script src="assets/bootstrap.min.js.download"></script>
-      <script type="text/javascript" src="assets/slick.js"></script>
-
-      <script>
-        
-
-       
-
-  </script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
 </body>
 </html>
