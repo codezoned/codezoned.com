@@ -385,7 +385,8 @@ a {
 .events-inner {
     width: 60%; 
     margin: 0 auto; 
-    </span> 
+    font-size: 1.1rem;
+
     letter-spacing: 1.1px; 
     word-spacing: 4px;
     
