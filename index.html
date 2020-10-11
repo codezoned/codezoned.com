@@ -34,42 +34,52 @@
 <body>
     <div class="nav-container">
         <div class="logo">
-            <a href="#"><img src="assets/img/czmainsmall1.png" alt="logo"></a>
+            <a href="#"><img src="assets/img/czmainsmall1.png" alt="logo" /></a>
         </div>
-    <div class="navbar">
+        <div class="navbar">
+            <div class="icon-bar" onclick="Show()">
+                <i></i>
+                <i></i>
+                <i></i>
+            </div><!-- .icon-bar -->
     
-    <div class="icon-bar" onclick="Show()">
-        <i></i>
-        <i></i>
-        <i></i>
-    </div>
-    
-    <ul id="nav-lists">
-        <li class="close"><span onclick="Hide()">×</span></li>
-        <li><a href="#">JoinUs</a></li>
-        <li><a href="#">RIG</a></li>
-        <li><a href="#">ScriptsDump</a></li>
-        <li><a href="#">BlogCast</a></li>
-        <li><a href="#">Forum</a></li>
-    </ul>
-    
-    </div>
-    </div>
+            <ul id="nav-lists">
+                <li class="close"><span onclick="Hide()">×</span></li>
+                <li><a href="#">JoinUs</a></li>
+                <li><a href="#">RIG</a></li>
+                <li><a href="#">ScriptsDump</a></li>
+                <li><a href="#">BlogCast</a></li>
+                <li><a href="#">Forum</a></li>
+            </ul><!-- #nav-lists -->
+        </div><!-- .navbar -->
+    </div><!-- .nav-container -->
+
     <div class="welcome-section">
         <div class="welcome-inner">
-            <h1 class="welcome-text" style="font-family: profontwindows; word-spacing: -8px; font-size: 3em;">Welcome to <span class="codezoned-colored-text" style=" color: red;">code</span><span style="color: white;">codezoned</span><span style="color: #767777;">;</span></span></h1>
-            <p class="quote-text">We are an Opensource non-profit-organization which is targeting on educating and spreading our core belief of 'learning by doing'.</p>
+            <h1 class="welcome-text" style="font-family: profontwindows; word-spacing: -8px; font-size: 3em;">
+                Welcome to <span class="codezoned-colored-text" style="color:red;">code</span><span style="color:white;">codezoned</span><span style="color:#767777;">;</span></span>
+            </h1>
+            <p class="quote-text">
+                We are an Opensource non-profit-organization which is targeting on educating and spreading our core belief of 'learning by doing'.
+            </p>
             <div class="button-container">
-                <a href="http://join.codezoned.com/"><div class='button -regular center joinus' style="min-width: 340px;"> Join Us</div></a>
-                
+                <a href="http://join.codezoned.com/">
+                    <div class='button -regular center joinus' style="min-width: 340px;"> Join Us</div>
+                </a>
             </div>
             <div class="button-container">
-                <a href="https://github.com/codezoned/"><div class='button -regular center' style="min-width: 100px;"> GitHub</div></a>
-                <a href="http://talk.codezoned.com"><div class='button -regular center' style="min-width: 100px;">Forum</div></a>
-                <a href="http://discord.codezoned.com"><div class='button -regular center' style="min-width: 100px;">Discord</div></a>
+                <a href="https://github.com/codezoned/">
+                    <div class='button -regular center' style="min-width: 100px;"> GitHub</div>
+                </a>
+                <a href="http://talk.codezoned.com">
+                    <div class='button -regular center' style="min-width: 100px;">Forum</div>
+                </a>
+                <a href="http://discord.codezoned.com">
+                    <div class='button -regular center' style="min-width: 100px;">Discord</div>
+                </a>
             </div>
-        </div>
-    </div>
+        </div><!-- .welcome-inner -->
+    </div><!-- .welcome-section -->
 
     <div class="white-section" style="background-color: white; padding: 2.5% 0;">
         <div class="about" style="text-align: center; width: 100%; padding: 4.5% 3%;">
@@ -80,12 +90,10 @@
                 <br><br>
                 We are completely opensource. We make our own stuff and help everyone make theirs. Your contributions are welcome!
             </div>
-    
-        </div>
+        </div><!-- .about -->
 
         <div class="events">
             <div class="events-inner" style="text-align: center;">
-
                 <h1>Events!</h1>
                 <p class="lead">These are some of the events we are honoured to have organised/been a part of.</p><br>
 
@@ -94,13 +102,9 @@
                     <a href="#"><img class="alertathon" src="assets/img/Alertathon-logo.png" alt=""></a>
                     <a href="#"><img class="hac" src="assets/img/hac_logo.png" alt=""></a>
                 </div>
-
-
-
-            </div>
-        </div>
-    
-    </div>
+            </div><!-- .events-inner -->
+        </div><!-- .events -->
+    </div><!-- .white-section -->
     
     <div class="black-section" style="padding: 2.5% 0;">
         <div class="partners">
@@ -123,13 +127,12 @@
                     <div class="types">
                         <span class="type-name">Evangelist</span> Partners
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                </div><!-- .partner-types -->
+            </div><!-- .partners-inner -->
+        </div><!-- .partners -->
+    </div><!-- .black-section -->
 
     <div class="white-section" style="background-color: white; padding: 2.5% 0">
-
         <div class="projects">
             <div class="projects-inner" style="text-align: center;">
                 <h1 class="projects-head">Some of our Opensource projects:</h1>
@@ -141,35 +144,36 @@
                         <div class="button-box-container">
                             <a href="#" class="button-box">Check It Out!</a>
                         </div>
-
                     </div>  
+
                     <div class="card">
                         <p class="card-title">RIG</p>
                         <p class="project-info">RIG (Randomized ID Generator) is an app to generate IDs and badges for any event or meetup!</p>
                         <div class="button-box-container">
                             <a href="#" class="button-box">Check It Out!</a>
                         </div>
-
                     </div> 
+
                     <div class="card">
                         <p class="card-title">BlogCast</p>
                         <p class="project-info">BlogCast is a 100% Opensource blogging App/Platform.</p>
                         <div class="button-box-container">
                             <a href="#" class="button-box">Check It Out!</a>
                         </div>
-
                     </div> 
-                    <!-- <div class="card">
+
+                    <!--
+                    <div class="card">
                         <p class="card-title">Project_name</p>
                         <p class="project-info">about the project</p>
                         <div class="" style="border-top: 2px solid #eeeeee; padding-top: 3%;">
                             <a href="#" class="button-box">Check It Out!</a>
                         </div>
-                    </div>    -->
-                </div>
-            </div>
-            
-        </div>
+                    </div>
+                    -->
+                </div><!-- .card-container -->
+            </div><!-- .projects-inner -->
+        </div><!-- .projects -->
 
         <div class="more">
             <p class="many-more" style="font-size: 1.6em;"><br> And many more...</p>
@@ -178,32 +182,28 @@
                 Wanna Partner with us? Sponsor us? Or talk to us? <br>
                 <span class="team-email">Contact us at team@codezoned.com</span> 
             </p>
-        </div>
-    </div>
+        </div><!-- .more -->
+    </div><!-- .white-section -->
 
-    <div style="width: 100%; position: fixed; background-color: black; height: 50px;" class="footer">
+    <div class="footer" style="width: 100%; position: fixed; background-color: black; height: 50px;">
         <div class="icon-container">
-  
           <div class="link">
             <a href="https://www.facebook.com/codezoned/" target="_blank"><span class="fa fa-facebook link-icon"></span></a>
           </div>
-  
           <div class="link">
             <a href="https://github.com/codezoned" target="_blank"><span class="fa fa-github-square link-icon"></span></a>
           </div>
-  
           <div class="link">
             <a href="https://www.linkedin.com/company/codezoned/" target="_blank"><span class="fa fa-linkedin link-icon"></span></a>
           </div>
-  
           <div class="link">
             <a href="https://www.instagram.com/codezoned/" target="_blank"><span class="fa fa-instagram link-icon"></span></a>
           </div>
           <div class="link">
             <a href="http://discord.codezoned.com" target="_blank"><span class="fa fa-discord link-icon"></span></a>
           </div>
-        </div>
-    </div>
+        </div><!-- .icon-container -->
+    </div><!-- .footer -->
     
     <script>
         var navList = document.getElementById("nav-lists");
@@ -242,7 +242,6 @@
             clearInterval(timer);
             timer = null;
         }
-
     </script>
 </body>
 </html>
