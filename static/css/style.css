@@ -441,6 +441,27 @@ a {
 
 /*==================================================== Partners =============================================================== */
 
+.previous-partners .sponsors-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.previous-partners .sponsors-images a {
+    flex: 0 1 30%;
+    padding: 0.5em;
+    margin: 0.5em;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.previous-partners .sponsors-images img {
+    max-width: 100%;
+}
+
 .spi {
     max-width: 35%;
 }
@@ -452,6 +473,15 @@ a {
 
 .alert{
     max-width: 15%;
+}
+
+.partners-inner {
+    text-align: center;
+}
+
+.partner-head {
+    color: white;
+    text-align: center;
 }
 
 .partner-types {
@@ -470,9 +500,6 @@ a {
 }
 
 @media only screen and (max-width: 650px) { 
-    .partners {
-
-    }
     .sponsors-images {
         display: grid;
     }
